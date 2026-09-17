@@ -1,0 +1,29 @@
+.exercicio-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+.grade-filmes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 450px;
+}
+
+.cartao-filme {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-filme {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #111827;
+}

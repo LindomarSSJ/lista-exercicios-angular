@@ -1,0 +1,18 @@
+.container-principal {
+  padding: 20px;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.claro {
+  background-color: #ffffff;
+  color: #333333;
+}
+.escuro {
+  background-color: #222222;
+  color: #ffffff;
+}
+.azul {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}

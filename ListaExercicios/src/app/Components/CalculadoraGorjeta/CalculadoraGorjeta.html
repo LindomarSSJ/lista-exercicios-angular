@@ -1,0 +1,46 @@
+<div class="exercicio-container">
+  <h2>Exercício 12: Calculadora de Gorjeta</h2>
+
+  <div class="formulario">
+    <div class="campo-grupo">
+      <label for="input-conta">Valor da Conta (R$):</label>
+      <input 
+        id="input-conta"
+        type="number" 
+        min="0"
+        step="0.01"
+        [value]="valorConta()" 
+        (input)="mudarValorConta($event)"
+      />
+    </div>
+
+    <div class="campo-grupo">
+      <label for="input-pessoas">Quantidade de Pessoas:</label>
+      <input 
+        id="input-pessoas"
+        type="number" 
+        min="1"
+        [value]="quantidadePessoas()" 
+        (input)="mudarQuantidadePessoas($event)"
+      />
+    </div>
+
+    <div class="campo-grupo">
+      <label for="input-gorjeta">Porcentagem da Gorjeta: <strong>{{ porcentagemGorjeta() }}%</strong></label>
+      <input 
+        id="input-gorjeta"
+        type="range" 
+        min="0" 
+        max="30" 
+        [value]="porcentagemGorjeta()" 
+        (input)="mudarPorcentagem($event)"
+      />
+    </div>
+  </div>
+
+  <div class="resultados-gorjeta">
+    <p>Valor da Gorjeta: <span>R$ {{ valorGorjeta() }}</span></p>
+    <p>Total com Gorjeta: <span>R$ {{ totalComGorjeta() }}</span></p>
+    <p class="destaque">Valor por Pessoa: <span>R$ {{ valorPorPessoa() }}</span></p>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="estrelas-container">
+  <div class="estrelas-linha">
+     
+    @for (ativa of estrelas(); track $index) {
+      <span class="estrela" [class.ativa]="ativa">★</span>
+    }
+  </div>
+  <span class="nota-texto">({{ notaOriginal() }}/5)</span>
+</div>

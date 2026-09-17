@@ -1,0 +1,29 @@
+<div class="exercicio-container">
+  <h2>Exercício 15: Jogo Adivinhe o Número</h2>
+
+  <div class="painel-jogo">
+    <p class="status-dica">{{ dica() }}</p>
+    <p class="contador">Tentativas: <strong>{{ tentativas() }}</strong></p>
+
+ 
+    @if (!jogoConcluido() && !desistiu()) {
+      <div class="controles-chute">
+        <input 
+          type="number" 
+          min="1" 
+          max="100" 
+          [value]="chuteUsuario() === null ? '' : chuteUsuario()" 
+          (input)="guardarChute($event)"
+          placeholder="Digite de 1 a 100"
+        />
+        <button class="botao-chutar" (click)="verificarChute()">Chutar</button>
+        <button class="botao-desistir" (click)="revelarResposta()">Desistir 🏳️</button>
+      </div>
+    } @else {
+ 
+      <div class="controles-reiniciar">
+        <button class="botao-novo-jogo" (click)="iniciarNovoJogo()">Jogar de Novo 🔄</button>
+      </div>
+    }
+  </div>
+</div>

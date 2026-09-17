@@ -1,0 +1,19 @@
+<div class="exercicio-container">
+  <h2>Exercício 16: Cartão de Spoiler</h2>
+
+  <div class="cartao-spoiler">
+    <span class="categoria">💡 CHARADA</span>
+    <p class="pergunta">O que é, o que é? Dá muitas voltas e não sai do lugar?</p>
+ 
+    @if (exibirResposta()) {
+      <div class="bloco-resposta">
+        <p class="resposta">⏱️ O relógio!</p>
+        <button class="botao-esconder" (click)="alternarVisibilidade()">Esconder</button>
+      </div>
+    } @else {
+      <div class="bloco-escondido">
+        <button class="botao-mostrar" (click)="alternarVisibilidade()">Mostrar resposta</button>
+      </div>
+    }
+  </div>
+</div>

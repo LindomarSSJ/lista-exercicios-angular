@@ -1,0 +1,64 @@
+.exercicio-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+.controle-barra {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+input[type="range"] {
+  cursor: pointer;
+  width: 100%;
+}
+
+.resultados-temperatura {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card-temp {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 12px 20px;
+  border-radius: 6px;
+  min-width: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.celsius-card {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.rotulo {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.valor {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.status-clima {
+  font-size: 1.1rem;
+  padding: 10px;
+  background-color: #fafafa;
+  border-left: 4px solid #10b981;
+  display: inline-block;
+  border-radius: 0 4px 4px 0;
+}

@@ -1,0 +1,54 @@
+<div class="container-principal" [class]="temaAtual()">
+  <h1>Minha Lista de Exercícios Angular</h1>
+
+  <app-seletor-tema (aoMudarTema)="alterarTema($event)"></app-seletor-tema>
+  <p>O tema atual é: <strong>{{ temaAtual() }}</strong></p>
+
+  <hr>  
+ 
+  <app-quadrado-que-cresce></app-quadrado-que-cresce>
+
+  <hr>
+ 
+  <app-contador-penalidade></app-contador-penalidade>
+
+  <hr>
+ 
+  <app-semaforo></app-semaforo>
+  
+  <hr>
+  <app-interruptor-luz></app-interruptor-luz>
+
+  <hr>
+  <app-dado-rpg></app-dado-rpg>
+
+  <hr>
+  <app-meu-nome-na-tela></app-meu-nome-na-tela>
+
+  <hr>
+  <app-barra-tamanho-letra></app-barra-tamanho-letra>
+
+  <hr>
+  <app-seletor-cor></app-seletor-cor>
+
+  <hr>
+  <app-contador-caracteres></app-contador-caracteres>
+
+<hr>
+<app-espelho-maluco></app-espelho-maluco>
+
+<hr>
+<app-conversor-temperatura></app-conversor-temperatura>
+
+<hr>
+<app-calculadora-gorjeta></app-calculadora-gorjeta>
+
+<hr>
+<app-adivinhe-numero></app-adivinhe-numero>
+
+<hr>
+<app-spoiler-card></app-spoiler-card>
+
+<hr>
+<app-lista-filmes></app-lista-filmes>
+</div>

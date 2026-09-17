@@ -1,0 +1,40 @@
+.exercicio-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+.controle-barra {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+input[type="range"] {
+  cursor: pointer;
+  width: 200px;
+}
+
+.info-tamanho {
+  font-weight: bold;
+  background-color: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #374151;
+}
+
+.texto-dinamico {
+  margin: 0;
+  color: #1f2937;
+  line-height: 1.4;
+  border-left: 4px solid #3b82f6;
+  padding-left: 15px;
+}

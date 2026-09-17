@@ -1,0 +1,36 @@
+<div class="exercicio-container">
+  <h2>Exercício 10: Espelho Maluco</h2>
+
+  <div class="campo-grupo">
+    <label for="input-espelho">Digite algo maluco:</label>
+    <input 
+      id="input-espelho"
+      type="text" 
+      [value]="texto()" 
+      (input)="atualizarTexto($event)" 
+      placeholder="Abandone o bom senso aqui..."
+    />
+  </div>
+
+  <div class="resultados-grid">
+    <div class="cartao-transformacao">
+      <h3>🔠 EM MAIÚSCULAS</h3>
+      <p class="resultado-texto">{{ textoMaiusculo() }}</p>
+    </div>
+
+    <div class="cartao-transformacao">
+      <h3>🔄 De Trás para Frente</h3>
+      <p class="resultado-texto {{ textoInvertido() ? 'fonte-esquisita' : '' }}">{{ textoInvertido() }}</p>
+    </div>
+
+    <div class="cartao-transformacao">
+      <h3>📝 Total de Palavras</h3>
+      <p class="resultado-numero">{{ totalPalavras() }}</p>
+    </div>
+
+    <div class="cartao-transformacao">
+      <h3>📏 Caracteres (sem espaços)</h3>
+      <p class="resultado-numero">{{ caracteresSemEspaco() }}</p>
+    </div>
+  </div>
+</div>

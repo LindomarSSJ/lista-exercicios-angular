@@ -1,0 +1,84 @@
+.exercicio-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+.painel-jogo {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.status-dica {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 10px;
+  min-height: 2.2rem; /* Evita que o layout pule ao mudar o texto */
+}
+
+.contador {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.controles-chute {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input[type="number"] {
+  width: 140px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  text-align: center;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.botao-chutar {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.botao-chutar:hover {
+  background-color: #0284c7;
+}
+
+.botao-desistir {
+  background-color: #ef4444;
+  color: white;
+}
+
+.botao-desistir:hover {
+  background-color: #dc2626;
+}
+
+.botao-novo-jogo {
+  background-color: #10b981;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.05rem;
+}
+
+.botao-novo-jogo:hover {
+  background-color: #059669;
+}

@@ -1,0 +1,21 @@
+<div class="exercicio-container">
+  <h2>Exercício 7: Barra que aumenta a letra</h2>
+
+  <div class="controle-barra">
+    <label for="barra-zoom">Arraste para mudar o tamanho:</label>
+    <input 
+      id="barra-zoom"
+      type="range" 
+      min="10" 
+      max="80" 
+      [value]="tamanhoFonte()" 
+      (input)="atualizarTamanho($event)"
+    />
+    <span class="info-tamanho">{{ tamanhoFonte() }}px</span>
+  </div>
+
+  
+  <p class="texto-dinamico" [style.font-size.px]="tamanhoFonte()">
+    Arraste a barra acima para me fazer crescer ou encolher! Este texto reage em tempo real.
+  </p>
+</div>

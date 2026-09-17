@@ -1,0 +1,28 @@
+<div class="exercicio-container">
+  <h2>Exercício 9: Contador de Caracteres</h2>
+
+  <div class="caixa-post">
+    <label for="campo-texto">O que você está pensando?</label>
+    <textarea 
+  id="campo-texto"
+  rows="4" 
+  [value]="texto()" 
+  (input)="atualizarTexto($event)" 
+  placeholder="Digite sua postagem aqui..."></textarea>
+
+ 
+    <div class="contador-status" [class.erro]="passouDoLimite()">
+      Caractere(s) restante(s): <strong>{{ restantes() }}</strong>
+    </div>
+
+  
+    @if (passouDoLimite()) {
+      <p class="aviso-erro">❌ Seu texto passou do limite de 140 caracteres!</p>
+    }
+
+ 
+    <button class="botao-publicar" [disabled]="passouDoLimite()">
+      Publicar
+    </button>
+  </div>
+</div>

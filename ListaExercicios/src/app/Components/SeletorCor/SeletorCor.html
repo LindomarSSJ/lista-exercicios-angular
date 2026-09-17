@@ -1,0 +1,17 @@
+<div class="exercicio-container">
+  <h2>Exercício 8: Seletor de Cor</h2>
+
+  <div class="controles">
+    <label for="input-cor">Escolha uma cor para o quadrado:</label>
+    <input 
+      id="input-cor"
+      type="color" 
+      [value]="corEscolhida()" 
+      (input)="atualizarCor($event)"
+    />
+    <span class="codigo-cor">Código: <code>{{ corEscolhida() }}</code></span>
+  </div>
+
+ 
+  <div class="quadrado-colorido" [style.background-color]="corEscolhida()"></div>
+</div>

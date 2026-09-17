@@ -1,0 +1,71 @@
+.exercicio-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  margin-bottom: 25px;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 500;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+input[type="number"], input[type="text"] {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
+
+.resultados-gorjeta {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 350px;
+}
+
+.resultados-gorjeta p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  color: #475569;
+}
+
+.resultados-gorjeta span {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.resultados-gorjeta .destaque {
+  font-size: 1.15rem;
+  border-top: 1px dashed #cbd5e1;
+  padding-top: 10px;
+  margin-top: 10px;
+  color: #0f172a;
+}
+
+.resultados-gorjeta .destaque span {
+  color: #16a34a;  
+  font-weight: bold;
+}

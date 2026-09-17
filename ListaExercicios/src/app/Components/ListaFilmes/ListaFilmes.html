@@ -1,0 +1,14 @@
+<div class="exercicio-container">
+  <h2>Exercício 17: Lista de Filmes com Avaliação</h2>
+
+  <div class="grade-filmes"> 
+    @for (filme of filmes(); track filme.id) {
+      <div class="cartao-filme">
+        <h3 class="titulo-filme">{{ filme.titulo }}</h3>
+        
+      
+        <app-estrelas-avaliacao [notaOriginal]="filme.nota"></app-estrelas-avaliacao>
+      </div>
+    }
+  </div>
+</div>

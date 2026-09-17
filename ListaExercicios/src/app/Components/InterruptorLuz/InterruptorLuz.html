@@ -1,0 +1,19 @@
+<div class="exercicio-container">
+  <h2>Exercício 4: Interruptor de Luz</h2>
+
+  
+  <div class="quarto" [class.aceso]="luzAcesa()" [class.apagado]="!luzAcesa()">
+    
+    <button (click)="alternarLuz()">
+      @if (luzAcesa()) {
+        Apagar
+      } @else {
+        Acender
+      }
+    </button>
+
+    <p class="status-texto">
+      O quarto está: <strong>{{ luzAcesa() ? 'Claríssimo!' : 'Breu total...' }}</strong>
+    </p>
+  </div>
+</div>

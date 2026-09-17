@@ -1,0 +1,11 @@
+<div class="exercicio-container">
+  <h2>Exercício 3: Semáforo</h2>
+
+ 
+  <div class="circulo" [class]="'circulo ' + corAtual()"></div>
+
+  <div class="controles">
+    <button (click)="proximaCor()">Próxima</button>
+    <p>Luz ativa: <strong>{{ corAtual() }}</strong></p>
+  </div>
+</div>

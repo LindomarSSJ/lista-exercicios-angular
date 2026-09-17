@@ -1,0 +1,18 @@
+<div class="exercicio-container">
+  <h2>Exercício 6: Meu nome na tela</h2>
+
+  <div class="campo-grupo">
+    <label for="input-nome">Digite seu nome:</label>
+   
+    <input 
+      id="input-nome"
+      type="text" 
+      [value]="nome()" 
+      (input)="atualizarNome($event)" 
+      placeholder="Ex: Maria"
+    />
+  </div>
+
+  
+  <h1 class="titulo-saudacao">{{ saudacao() }}</h1>
+</div>

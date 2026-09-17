@@ -1,0 +1,53 @@
+<div class="painel-container" style="padding: 20px; font-family: sans-serif;">
+  <h2>Painel de Controle do Hangar</h2>
+
+ 
+  @if (alertaCombustivel()) {
+    <div style="background-color: red; color: white; padding: 10px; margin-bottom: 15px; border-radius: 4px; font-weight: bold;">
+      🚨 ALERTA: Há naves no hangar com combustível abaixo de 20%!
+    </div>
+  }
+
+   
+  <div style="display: flex; gap: 20px; margin-bottom: 20px; background: #f9f9f9; padding: 10px; border-radius: 5px;">
+    <p>Total de Naves: <strong>{{ totalNaves() }}</strong></p>
+    <p>Tripulação Total: <strong>{{ tripulacaoTotal() }}</strong></p>
+  </div>
+
+   
+  <div class="cadastro-nave" style="border: 1px dashed #777; padding: 15px; margin-bottom: 20px; border-radius: 6px;">
+    <h3>Atracar Nova Nave</h3>
+    <div style="margin-bottom: 10px;">
+      <label>Nome: </label>
+      <input type="text" [ngModel]="novoNome()" (ngModelChange)="novoNome.set($event)" placeholder="Mínimo 3 letras" />
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label>Combustível (0-100): </label>
+      <input type="number" [ngModel]="novoCombustivel()" (ngModelChange)="novoCombustivel.set($event)" />
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label>Tripulação: </label>
+      <input type="number" [ngModel]="novaTripulacao()" (ngModelChange)="novaTripulacao.set($event)" />
+    </div>
+    
+    <button (click)="atracarNave()" [disabled]="botaoDesabilitado()" style="padding: 8px 15px; cursor: pointer;">
+      Atracar
+    </button>
+  </div>
+
+  <hr />
+
+   
+  <h3>Naves no Hangar</h3>
+  <div class="lista-naves" style="display: flex; flex-wrap: wrap;">
+    @for (nave of naves(); track nave.nome) {
+      <app-card-nave 
+        [nome]="nave.nome" 
+        [combustivel]="nave.combustivel" 
+        [tripulacao]="nave.tripulacao">
+      </app-card-nave>
+    } @empty {
+      <p style="font-style: italic; color: #666;">Hangar vazio</p>
+    }
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.estrelas-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.estrelas-linha {
+  display: flex;
+  gap: 2px;
+}
+
+.estrela {
+  font-size: 1.4rem;
+  color: #d1d5db; 
+  transition: color 0.2s;
+}
+
+.estrela.ativa {
+  color: #fbbf24;  
+}
+
+.nota-texto {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 500;
+}

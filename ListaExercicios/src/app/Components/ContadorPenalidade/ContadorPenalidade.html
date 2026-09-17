@@ -1,0 +1,17 @@
+<div class="exercicio-container">
+  <h2>Exercício 2: Contador com Penalidade</h2>
+
+  <div class="contador-box">
+    <p>Cliques realizados: <strong class="numero">{{ cliques() }}</strong></p>
+    
+    @if (cliques() >= 10) {
+      <p class="aviso">⚠️ Você está exagerando nos cliques!</p>
+    }
+  </div>
+
+  <div class="botoes">
+     
+    <button [class]="classeBotao()" (click)="adicionar()">Somar +1</button>
+    <button class="botao-zerar" (click)="zerar()">Zerar Tudo</button>
+  </div>
+</div>

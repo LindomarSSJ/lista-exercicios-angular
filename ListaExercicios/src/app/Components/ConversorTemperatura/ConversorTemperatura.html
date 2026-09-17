@@ -1,0 +1,36 @@
+<div class="exercicio-container">
+  <h2>Exercício 11: Conversor de Temperatura</h2>
+
+  <div class="controle-barra">
+    <label for="barra-temperatura">Ajuste a temperatura em Celsius:</label>
+    <input 
+      id="barra-temperatura"
+      type="range" 
+      min="-50" 
+      max="50" 
+      [value]="celsius()" 
+      (input)="atualizarTemperatura($event)"
+    />
+  </div>
+
+  <div class="resultados-temperatura">
+    <div class="card-temp celsius-card">
+      <span class="rotulo">Celsius</span>
+      <span class="valor">{{ celsius() }}°C</span>
+    </div>
+
+    <div class="card-temp">
+      <span class="rotulo">Fahrenheit</span>
+      <span class="valor">{{ fahrenheit() }}°F</span>
+    </div>
+
+    <div class="card-temp">
+      <span class="rotulo">Kelvin</span>
+      <span class="valor">{{ kelvin() }}K</span>
+    </div>
+  </div>
+
+  <div class="status-clima">
+    Sensação: <strong>{{ descricaoClima() }}</strong>
+  </div>
+</div>

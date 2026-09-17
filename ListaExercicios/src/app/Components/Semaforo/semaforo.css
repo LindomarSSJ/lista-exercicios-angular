@@ -1,0 +1,45 @@
+.exercicio-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+ 
+.circulo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ 
+.vermelho {
+  background-color: #ff4757;
+  box-shadow: 0 0 15px #ff4757;
+}
+
+.amarelo {
+  background-color: #ffa502;
+  box-shadow: 0 0 15px #ffa502;
+}
+
+.verde {
+  background-color: #2ed573;
+  box-shadow: 0 0 15px #2ed573;
+}
+
+.controles {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
